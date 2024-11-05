@@ -1,5 +1,7 @@
 import torch
 
+from src.config.emb import load_yaml
+
 def main(args):
     # Check the config file for advanced settings and extensions.
     config_file = f'configs/emb/gte-large-en-v1.5/{args.dataset}.yaml'

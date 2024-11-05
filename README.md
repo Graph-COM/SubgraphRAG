@@ -6,6 +6,7 @@
 
 ## Table of Contents
 
+- [Usage](#usage)
 - [Citation](#citation)
 
 ## Usage

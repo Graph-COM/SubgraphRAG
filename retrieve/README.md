@@ -2,12 +2,12 @@
 
 ## Table of Contents
 
-- [Overview](#overview)
+- [Supported Datasets](#supported-datasets)
 - [1-1 Embedding Pre-Computation](#1-1-entity-and-relation-embedding-pre-computation)
     * [Installation](#installation)
     * [Inference (Embedding Computation)](#inference-embedding-computation)
 
-## Overview
+## Supported Datasets
 
 We support two built-in multi-hop knowledge graph question answering (KGQA) datasets, `webqsp` and `cwq`.
 
@@ -29,4 +29,4 @@ pip install -U xformers --index-url https://download.pytorch.org/whl/cu121
 ```bash
 python emb.py -d D
 ```
-, where `D` should be the dataset to use.
+where `D` should be a dataset mentioned in ["Supported Datasets"](#supported-datasets).

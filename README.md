@@ -8,6 +8,7 @@
 
 - [Usage](#usage)
 - [Citation](#citation)
+- [Frequently Asked Questions (FQA)](#frequently-asked-questions-fqa)
 
 ## Usage
 
@@ -15,6 +16,10 @@ SubgraphRAG is a retrieval-and-reasoning pipeline for knowledge-graph-based retr
 
 1. For the retrieval stage, see [the retrieve folder](./retrieve/).
 2. For the reasoning stage, see [the reason folder](./reason/).
+
+## Frequently Asked Questions (FQA)
+
+We welcome your feedback and appreciate your time! If you encounter bugs or have feature requests, please [open an issue](../../issues/new) or email us at `{mufei.li, siqi.miao}@gatech.edu`. Your input helps us improve and better serve the community!
 
 ## Citation
 

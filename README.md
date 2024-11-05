@@ -1,4 +1,4 @@
-# SubgraphRAG
+# SubgraphRAG, Simple Yet Effective KG-Based RAG
 
 [[Paper]](https://arxiv.org/abs/2410.20724)
 

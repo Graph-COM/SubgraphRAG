@@ -17,6 +17,8 @@ We first pre-compute and cache entity and relation embeddings for all samples to
 
 ### Installation
 
+We use `gte-large-en-v1.5` for text encoder, hence the environment name.
+
 ```bash
 conda create -n gte_large_en_v1-5 python=3.10 -y
 conda activate gte_large_en_v1-5

@@ -5,6 +5,7 @@
 - [Overview](#overview)
 - [1-1 Embedding Pre-Computation](#1-1-entity-and-relation-embedding-pre-computation)
     * [Installation](#installation)
+    * [Inference (Embedding Computation)](#inference-embedding-computation)
 
 ## Overview
 
@@ -22,3 +23,10 @@ conda activate gte_large_en_v1-5
 pip install -r gte_large_en_v1-5_requirements.txt
 pip install -U xformers --index-url https://download.pytorch.org/whl/cu121
 ```
+
+### Inference (Embedding Computation)
+
+```bash
+python emb.py -d D
+```
+, where `D` should be the dataset to use.

@@ -5,7 +5,7 @@ from src.config.emb import load_yaml
 def main(args):
     # Check the config file for advanced settings and extensions.
     config_file = f'configs/emb/gte-large-en-v1.5/{args.dataset}.yaml'
-    load_yaml(config_file)
+    config = load_yaml(config_file)
 
 if __name__ == '__main__':
     from argparse import ArgumentParser

@@ -4,9 +4,6 @@ env:
   num_threads: 16
   seed: 42
 
-dataset:
-  name: 'cwq'
-
 text_encoder:
   name: 'gte-large-en-v1.5'
   normalize: true

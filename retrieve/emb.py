@@ -17,6 +17,10 @@ def main(args):
     else:
         input_file = os.path.join('ml1996', 'webqsp')
 
+    train_set = load_dataset(input_file, split='train')
+    val_set = load_dataset(input_file, split='validation')
+    test_set = load_dataset(input_file, split='test')
+
 if __name__ == '__main__':
     from argparse import ArgumentParser
     

@@ -6,4 +6,3 @@ env:
 
 text_encoder:
   name: 'gte-large-en-v1.5'
-  normalize: true

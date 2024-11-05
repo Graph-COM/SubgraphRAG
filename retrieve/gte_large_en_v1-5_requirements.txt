@@ -1,0 +1,4 @@
+accelerate==0.32.1
+datasets==2.20.0
+pydantic==2.8.2
+transformers==4.43.2

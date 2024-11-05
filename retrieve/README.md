@@ -12,4 +12,8 @@ We first pre-compute and cache entity and relation embeddings for all samples to
 ### Installation
 
 ```bash
+conda create -n gte_large_en_v1-5 python=3.10 -y
+conda activate gte_large_en_v1-5
+pip install -r gte_large_en_v1-5_requirements.txt
+pip install -U xformers --index-url https://download.pytorch.org/whl/cu121
 ```

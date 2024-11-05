@@ -2,8 +2,13 @@
 
 ## Table of Contents
 
+- [Overview](#overview)
 - [1-1 Embedding Pre-Computation](#1-1-entity-and-relation-embedding-pre-computation)
     * [Installation](#installation)
+
+## Overview
+
+We support two built-in multi-hop knowledge graph question answering (KGQA) datasets, `webqsp` and `cwq`.
 
 ## 1-1: Entity and Relation Embedding Pre-Computation
 

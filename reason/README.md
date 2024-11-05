@@ -1,1 +1,1 @@
-# Stage II: Reasoning
+# Stage 2: Reasoning

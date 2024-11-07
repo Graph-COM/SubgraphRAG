@@ -1,0 +1,25 @@
+task: 'retriever'
+
+env:
+  num_threads: 16
+  seed: 42
+
+dataset:
+  emb_name: 'gte-large-en-v1.5'
+
+retriever:
+  topic_pe: true
+  DDE:
+    num_rounds: 2
+    num_reverse_rounds: 2
+
+optimizer:
+  lr: 1e-3
+
+eval:
+  k_list: '100'
+
+train:
+  num_epochs: 10000
+  patience: 10
+  save_prefix: 'cwq'

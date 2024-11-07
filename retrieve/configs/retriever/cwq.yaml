@@ -5,6 +5,7 @@ env:
   seed: 42
 
 dataset:
+  name: 'cwq'
   text_encoder_name: 'gte-large-en-v1.5'
 
 retriever:

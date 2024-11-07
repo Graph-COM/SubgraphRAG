@@ -4,6 +4,7 @@ import yaml
 from .base import EnvYaml
 
 class DatasetYaml(pydantic.BaseModel):
+    name: str
     text_encoder_name: str
 
 class DDEYaml(pydantic.BaseModel):

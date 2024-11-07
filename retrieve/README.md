@@ -43,6 +43,8 @@ where `D` should be a dataset mentioned in ["Supported Datasets"](#supported-dat
 
 ## 1-2: Retriever Development
 
+We now train a retriever, employ it for retrieval (inference), and evaluate the retrieval results.
+
 ### Installation
 
 ```bash

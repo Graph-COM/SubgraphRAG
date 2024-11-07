@@ -4,12 +4,14 @@ import pickle
 from tqdm import tqdm
 
 class EmbInferDataset:
-    def __init__(self,
-                 raw_set,
-                 entity_identifiers,
-                 save_path,
-                 skip_no_topic=True,
-                 skip_no_ans=True):
+    def __init__(
+        self,
+        raw_set,
+        entity_identifiers,
+        save_path,
+        skip_no_topic=True,
+        skip_no_ans=True
+    ):
         """
         Parameters
         ----------

@@ -1,5 +1,6 @@
 import os
 import pickle
+import torch
 
 class RetrieverDataset:
     def __init__(
@@ -33,4 +34,9 @@ class RetrieverDataset:
         split,
         processed_dict_list
     ):
-        pass
+        save_dir = os.path.join('data_files', dataset_name, 'triple_scores')
+        os.makedirs(save_dir, exist_ok=True)
+        save_file = os.path.join(save_dir, f'{split}.pth')
+
+        if os.path.exists(save_file):
+            return torch.load(save_file)

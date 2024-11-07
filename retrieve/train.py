@@ -1,3 +1,4 @@
+import pandas as pd
 import time
 import torch
 
@@ -11,6 +12,9 @@ def main(args):
     
     torch.set_num_threads(config['env']['num_threads'])
     set_seed(config['env']['seed'])
+
+    ts = time.strftime('%b%d-%H:%M:%S', time.gmtime())
+    config_df = pd.json_normalize(config, sep='/')
 
 if __name__ == '__main__':
     from argparse import ArgumentParser

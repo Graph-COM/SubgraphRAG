@@ -10,7 +10,7 @@ dataset:
 
 retriever:
   topic_pe: true
-  DDE:
+  DDE_kwargs:
     num_rounds: 2
     num_reverse_rounds: 2
 

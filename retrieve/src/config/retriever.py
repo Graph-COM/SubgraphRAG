@@ -13,7 +13,7 @@ class DDEYaml(pydantic.BaseModel):
 
 class RetrieverYaml(pydantic.BaseModel):
     topic_pe: bool
-    DDE: DDEYaml
+    DDE_kwargs: DDEYaml
 
 class OptimizerYaml(pydantic.BaseModel):
     lr: float
@@ -41,4 +41,8 @@ def load_yaml(config_file):
     task = yaml_data.pop('task')
     assert task == 'retriever'
     
-    return RetrieverTrainYaml(**yaml_data).model_dump()
+    config = RetrieverTrainYaml(**yaml_data).model_dump()
+    config['eval']['k_list'] = [
+        int(k) for k in config['eval']['k_list'].split(',')]
+
+    return config

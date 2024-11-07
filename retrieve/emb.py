@@ -20,6 +20,12 @@ def main(args):
     train_set = load_dataset(input_file, split='train')
     val_set = load_dataset(input_file, split='validation')
     test_set = load_dataset(input_file, split='test')
+    
+    entity_identifiers = []
+    with open(config['entity_identifier_file'], 'r') as f:
+        for line in f:
+            entity_identifiers.append(line.strip())
+    entity_identifiers = set(entity_identifiers)
 
 if __name__ == '__main__':
     from argparse import ArgumentParser

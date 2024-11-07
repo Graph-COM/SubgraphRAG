@@ -10,6 +10,7 @@ class TextEncoderYaml(pydantic.BaseModel):
 
 class EmbYaml(pydantic.BaseModel):
     env: EnvYaml
+    entity_identifier_file: str
     text_encoder: TextEncoderYaml
 
 def load_yaml(config_file):

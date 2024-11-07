@@ -1,3 +1,5 @@
+import torch
+
 from src.config.retriever import load_yaml
 
 def main(args):

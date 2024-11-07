@@ -6,6 +6,11 @@
 - [1-1 Embedding Pre-Computation](#1-1-entity-and-relation-embedding-pre-computation)
     * [Installation](#installation)
     * [Inference (Embedding Computation)](#inference-embedding-computation)
+- [1-2 Retriever Development](#1-2-retriever-development)
+    * [Installation](#installation-1)
+    * [Training](#training)
+    * [Inference](#inference)
+    * [Evaluation](#evaluation)
 
 ## Supported Datasets
 
@@ -32,3 +37,16 @@ pip install -U xformers --index-url https://download.pytorch.org/whl/cu121
 python emb.py -d D
 ```
 where `D` should be a dataset mentioned in ["Supported Datasets"](#supported-datasets).
+
+## 1-2: Retriever Development
+
+### Installation
+
+```bash
+```
+
+### Training
+
+### Inference
+
+### Evaluation

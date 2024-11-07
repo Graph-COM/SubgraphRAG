@@ -1,11 +1,16 @@
+import time
 import torch
 
 from src.config.retriever import load_yaml
+from src.setup import set_seed
 
 def main(args):
     # Modify the config file for advanced settings and extensions.
     config_file = f'configs/retriever/{args.dataset}.yaml'
     config = load_yaml(config_file)
+    
+    torch.set_num_threads(config['env']['num_threads'])
+    set_seed(config['env']['seed'])
 
 if __name__ == '__main__':
     from argparse import ArgumentParser

@@ -1,9 +1,7 @@
 import pydantic
 import yaml
 
-class EnvYaml(pydantic.BaseModel):
-    num_threads: int
-    seed: int
+from .base import EnvYaml
 
 class TextEncoderYaml(pydantic.BaseModel):
     name: str

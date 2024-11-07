@@ -14,7 +14,10 @@
 
 ## Supported Datasets
 
-We support two built-in multi-hop knowledge graph question answering (KGQA) datasets, `webqsp` and `cwq`.
+We support two built-in multi-hop knowledge graph question answering (KGQA) datasets:
+
+- `webqsp`
+- `cwq`
 
 ## 1-1: Entity and Relation Embedding Pre-Computation
 

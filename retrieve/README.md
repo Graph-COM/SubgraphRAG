@@ -27,7 +27,7 @@ We use `gte-large-en-v1.5` for text encoder, hence the environment name.
 ```bash
 conda create -n gte_large_en_v1-5 python=3.10 -y
 conda activate gte_large_en_v1-5
-pip install -r gte_large_en_v1-5_requirements.txt
+pip install -r requirements/gte_large_en_v1-5.txt
 pip install -U xformers --index-url https://download.pytorch.org/whl/cu121
 ```
 
@@ -43,6 +43,12 @@ where `D` should be a dataset mentioned in ["Supported Datasets"](#supported-dat
 ### Installation
 
 ```bash
+conda create -n retriever python=3.10 -y
+conda activate retriever
+pip install -r requirements/retriever.txt
+pip install torch==2.1.0 --index-url https://download.pytorch.org/whl/cu121
+pip install torch_geometric==2.5.3
+pip install pyg_lib==0.3.1 torch_scatter==2.1.2 torch_sparse==0.6.18 -f https://data.pyg.org/whl/torch-2.1.0+cu121.html
 ```
 
 ### Training

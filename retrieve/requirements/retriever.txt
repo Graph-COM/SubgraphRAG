@@ -1,0 +1,8 @@
+accelerate==0.32.1
+datasets==2.20.0
+networkx==3.1
+pyarrow==16.1.0
+pydantic==2.8.2
+transformers==4.43.2
+wandb==0.17.4
+pandas==2.2.2

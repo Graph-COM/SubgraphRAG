@@ -53,6 +53,11 @@ pip install pyg_lib==0.3.1 torch_scatter==2.1.2 torch_sparse==0.6.18 -f https://
 
 ### Training
 
+```bash
+python train.py -d D
+```
+where `D` should be a dataset mentioned in ["Supported Datasets"](#supported-datasets).
+
 ### Inference
 
 ### Evaluation

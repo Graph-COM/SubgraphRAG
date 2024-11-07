@@ -26,6 +26,9 @@ def main(args):
         for line in f:
             entity_identifiers.append(line.strip())
     entity_identifiers = set(entity_identifiers)
+    
+    save_dir = f'data_files/{args.dataset}/processed'
+    os.makedirs(save_dir, exist_ok=True)
 
 if __name__ == '__main__':
     from argparse import ArgumentParser

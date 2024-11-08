@@ -124,7 +124,7 @@ def main(args):
     exp_prefix = config['train']['save_prefix']
     exp_name = f'{exp_prefix}_{ts}'
     wandb.init(
-        project=f'{args.dataset}_241107',
+        project=f'{args.dataset}',
         name=exp_name,
         config=config_df.to_dict(orient='records')[0]
     )

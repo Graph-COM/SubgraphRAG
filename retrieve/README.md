@@ -63,7 +63,9 @@ python train.py -d D
 ```
 where `D` should be a dataset mentioned in ["Supported Datasets"](#supported-datasets).
 
-We use [Wandb](https://wandb.ai/site/) for logging learning curves.
+For logged learning curves, go to the corresponding Wandb interface. 
+
+Once trained, there will be a folder in the current directory of the form `{dataset}_{time}` that stores the trained model checkpoint `cpt.pth`.
 
 ### Inference
 

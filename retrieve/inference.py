@@ -1,7 +1,7 @@
 import torch
 
 def main(args):
-    pass
+    torch.load(args.path)
 
 if __name__ == '__main__':
     from argparse import ArgumentParser

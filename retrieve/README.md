@@ -65,8 +65,13 @@ where `D` should be a dataset mentioned in ["Supported Datasets"](#supported-dat
 
 For logged learning curves, go to the corresponding Wandb interface. 
 
-Once trained, there will be a folder in the current directory of the form `{dataset}_{time}` that stores the trained model checkpoint `cpt.pth`.
+Once trained, there will be a folder in the current directory of the form `{dataset}_{time}` (e.g., `webqsp_Nov08-01:14:47/`) that stores the trained model checkpoint `cpt.pth`.
 
 ### Inference
+
+```bash
+python inference.py -p P
+```
+where `P` is the path to a saved model checkpoint, e.g., `webqsp_Nov08-01:14:47/cpt.pth`.
 
 ### Evaluation

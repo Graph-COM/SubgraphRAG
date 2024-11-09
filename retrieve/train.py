@@ -14,24 +14,7 @@ from tqdm import tqdm
 from src.config.retriever import load_yaml
 from src.dataset.retriever import RetrieverDataset, collate_retriever
 from src.model.retriever import Retriever
-from src.setup import set_seed
-
-def prepare_sample(device, sample):
-    h_id_tensor, r_id_tensor, t_id_tensor, q_emb, entity_embs,\
-        num_non_text_entities, relation_embs, topic_entity_one_hot,\
-        target_triple_probs, a_entity_id_list = sample
-
-    h_id_tensor = h_id_tensor.to(device)
-    r_id_tensor = r_id_tensor.to(device)
-    t_id_tensor = t_id_tensor.to(device)
-    q_emb = q_emb.to(device)
-    entity_embs = entity_embs.to(device)
-    relation_embs = relation_embs.to(device)
-    topic_entity_one_hot = topic_entity_one_hot.to(device)
-    
-    return h_id_tensor, r_id_tensor, t_id_tensor, q_emb, entity_embs,\
-        num_non_text_entities, relation_embs, topic_entity_one_hot,\
-        target_triple_probs, a_entity_id_list
+from src.setup import set_seed, prepare_sample
 
 @torch.no_grad()
 def eval_epoch(config, device, data_loader, model):

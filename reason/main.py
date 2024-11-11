@@ -106,7 +106,6 @@ def main():
     parser.add_argument("-d", "--dataset_name", type=str, default="cwq", help="Dataset name")
     parser.add_argument("--prompt_mode", type=str, default="scored_100", help="Prompt mode")
     parser.add_argument("--llm_mode", type=str, default="sys_icl_dc", help="LLM mode")
-    parser.add_argument("--gpu", type=str, default="7", help="GPU")
     parser.add_argument("-m", "--model_name", type=str, default="meta-llama/Meta-Llama-3.1-8B-Instruct", help="Model name")
     # parser.add_argument("--model_name", type=str, default="gpt-4o", help="Model name")
     parser.add_argument("--split", type=str, default="test", help="Split")
@@ -122,8 +121,6 @@ def main():
     dataset_name = args.dataset_name
     prompt_mode = args.prompt_mode
     llm_mode = args.llm_mode
-    if args.gpu != "-1":
-        os.environ["CUDA_VISIBLE_DEVICES"] = args.gpu
     model_name = args.model_name
     split = args.split
     tensor_parallel_size = args.tensor_parallel_size
@@ -136,7 +133,7 @@ def main():
 
     pred_file_path = f"./results/KGQA/{dataset_name}/RoG/{split}/results_gen_rule_path_RoG-{dataset_name}_RoG_{split}_predictions_3_False_jsonl/predictions.jsonl"
     run_name = f"{model_name}-{prompt_mode}-{llm_mode}-{frequency_penalty}-thres_{thres}-{split}"
-    run = wandb.init(entity="g-com", project=f"RAG-{dataset_name}", name=run_name, config=args)
+    run = wandb.init(project=f"RAG-{dataset_name}", name=run_name, config=args)
 
     if dataset_name == "webqsp":
         assert split == "test"

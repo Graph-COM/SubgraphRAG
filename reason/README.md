@@ -25,7 +25,7 @@ huggingface-cli download siqim311/SubgraphRAG --revision main --local-dir ./
 
 ## Inference with LLMs
 
-First put the retriver's results in `./scored_triples`. Then, one can run `main.py` with proper paramerters. For example,
+After downloading the pre-processed results, one can run `main.py` with proper paramerters. For example,
 
 ```
 python main.py -d webqsp --prompt_mode scored_100

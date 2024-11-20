@@ -1,0 +1,25 @@
+program: main.py
+project: RAG-cwq
+entity: g-com
+name: cwq_llama31
+method: grid
+metric:
+  goal: maximize
+  name: corrected/f1
+parameters:
+  prompt_mode:
+    value: scored_100  # [scored_200, scored_300, ...]
+  frequency_penalty:
+    value: 0.16
+  # max_tokens:  # for GPT models
+  #   value: 1000
+  llm_mode:
+    value: sys_icl_dc_repro
+
+  model_name:
+    value: meta-llama/Meta-Llama-3.1-8B-Instruct
+    # value: gpt-4o-mini
+  dataset_name:
+    value: cwq
+  gpu:
+    value: "-1"

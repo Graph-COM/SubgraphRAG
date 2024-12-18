@@ -44,7 +44,7 @@ class DDE(nn.Module):
         
         h_pe_rev = topic_entity_one_hot
         for layer in self.reverse_layers:
-            h_pe_rev = layer(reverse_edge_index, h_pe)
+            h_pe_rev = layer(reverse_edge_index, h_pe_rev)
             result_list.append(h_pe_rev)
         
         return result_list

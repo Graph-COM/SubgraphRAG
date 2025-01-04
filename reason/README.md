@@ -35,6 +35,15 @@ python main.py -d webqsp --prompt_mode scored_100
 python main.py -d cwq --prompt_mode scored_100
 ```
 
+### Using Alternative Retrieval Results
+
+To use alternative retrieval results,
+
+```
+python main.py -d webqsp --prompt_mode scored_100 -p P
+```
+where `P` is the path to the retrieval results obtained from retrieval inference, e.g., `../retrieve/webqsp_Nov08-01:14:47/retrieval_result.pth`.
+
 ### Config
 
 Our used config for each dataset can be found in `./config`.

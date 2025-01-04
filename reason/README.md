@@ -15,15 +15,18 @@ pip install torch==2.4.0 --index-url https://download.pytorch.org/whl/cu121
 pip install vllm==0.5.5 openai==1.50.2 wandb
 ```
 
-## Pre-processed Results for Reproducibility
+## Reasoning (Inference)
 
-We provide our retriever's results in `./scored_triples` and our reasoning results in `./results`. Please run the following command to download all our results.
+### Using Pre-Processed Retrieval Results for Reproducibility
 
-```
+We provide pre-processed results for reproducibility of the paper experiments. To download them
+
+```bash
 huggingface-cli download siqim311/SubgraphRAG --revision main --local-dir ./
 ```
 
-## Inference with LLMs
+- `scored_triples` stores the pre-processed retrieval results.
+- `results/KGQA` stores the reasoning results.
 
 After downloading the pre-processed results, one can run `main.py` with proper paramerters. For example,
 
@@ -32,5 +35,6 @@ python main.py -d webqsp --prompt_mode scored_100
 python main.py -d cwq --prompt_mode scored_100
 ```
 
-Our used config for each dataset can be found in `./config`.
+### Config
 
+Our used config for each dataset can be found in `./config`.
